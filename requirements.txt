@@ -1,0 +1,5 @@
+numpy
+pandas
+openpyxl
+scikit-learn>=1.6
+joblib

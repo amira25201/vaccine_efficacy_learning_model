@@ -1,7 +1,7 @@
 # Vaccine effectiveness recommender (*Yersinia pestis*)
 
-Given a challenge profile — the combination of mouse strain, *Y. pestis* strain,
-plague type, challenge dose, and vaccine dose — which plague vaccine has the best
+Given a challenge profile (mouse strain, *Y. pestis* strain,
+plague type, challenge dose, and vaccine dose), which plague vaccine has the best
 predicted survival? Rather than naming one best vaccine overall, the model scores
 every vaccine for the profile you enter and ranks them.
 
@@ -10,12 +10,12 @@ studies, originally as an Extended Project Qualification, graded A*.
 
 ```bash
 pip install -r requirements.txt
-python train.py --demo     # runs on synthetic data — see note below
+python train.py --demo     # runs on synthetic data, see note below
 python app.py              # the interface
 ```
 
 > **Note on the demo data:** `train.py --demo` generates a completely synthetic
-> spreadsheet using `make_demo_data.py`. The numbers are invented — they are not
+> spreadsheet using `make_demo_data.py`. The numbers are invented and are not
 > derived from or based on the real animal study records. Any predictions or
 > rankings produced from the demo run are meaningless outside of confirming the
 > code works. The real dataset is not in this repository.
